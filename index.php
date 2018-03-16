@@ -89,13 +89,13 @@ elseif($mode==2){ //Departures.
 	
 	// Global Variables.
 	var language = 'en';
-	var city = 'Nicosia';
+	var city = 'London';
 	var continent = 'Europe';		
 	var url = 'https://api.forecast.io/forecast/';
 	var apiKey = '';
 	var units = 'si';
-	var latitude = 51.4678;
-	var longitude = -0.4591;
+	var latitude = 0;
+	var longitude = 0;
 	var total, result, total_batch;
 	var tmp_count = 0;
 	var batch = new Array();
