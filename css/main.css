@@ -1,0 +1,172 @@
+html, body {
+	margin: 0;
+	padding:0;
+	font-family:'PT sans';
+	text-transform: uppercase;
+	color:#000000;
+	text-align:left;
+	overflow:hidden;
+	background: black;
+}
+
+#container{
+	z-index:1;
+}
+
+#header{
+	box-sizing: border-box;
+	height:5vh;
+	line-height:5vh;
+	color:black;
+	font-size:2.5vh;
+	font-weight:bold;
+	padding:0 1vh;
+	/*background: rgb(59,103,158);
+	background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 50%, rgba(125,185,232,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 50%,rgba(125,185,232,1) 100%);
+	background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 50%,rgba(125,185,232,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 ); 
+	*/
+	background: #FFCC00;
+	}
+
+#header #title{
+	float:left;
+}
+
+#header #location{
+	float:right;
+}		
+
+#info1{
+	/*background: rgb(59,103,158);
+	background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+	background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=0 );
+	*/
+	background:#FFCC00;
+	box-sizing: border-box;
+	text-align:left;
+	height:5vh;
+	line-height:5vh;
+	color:black;
+	font-size:1.8vh;
+	padding:0 1vh;
+}
+
+#info1 #weather div{
+	float:left;
+	padding:0;
+}
+
+#info1 #weather canvas{
+	height:3vh;
+	margin-top:1vh;
+	margin-right:0.5vh;
+}
+
+#info1 #datetime{
+	float:right;
+}
+
+#main{
+	height:86.2vh;
+}
+
+#main table{
+    width:100%;
+	border-collapse:collapse;	
+	font-size:2.5vh;
+	font-weight:bold;
+}
+
+#main table thead tr{
+    background:#333;
+	height:4vh;
+	line-height:4vh;
+	color:white;
+}
+
+#main table tbody tr{
+	height:4.3vh;
+}
+
+#main table th, #main table td{
+    padding:0 1vh;
+	border-bottom:1px solid white;
+	color:white;
+}
+
+#main table tr:nth-child(odd) td {
+    /*background: white*/
+}
+
+#main table tr:nth-child(even) td {
+    /*background-color: #e8ecee*/
+}
+
+#main table tr span{
+    background:#FFCC00 !important;
+	padding:0.5vh;
+	color:black;
+}
+
+#info2{
+	background:#333;
+	height:3.8vh;
+	line-height:3.8vh;
+	font-size:1.4vh;
+	padding:0 1vh;
+	text-align:left;
+	box-sizing: border-box;
+	color:white
+}
+
+#info2 #location{
+	float:left;
+}
+
+#info2 #weather_info{
+	float:right;
+}
+
+#info2 ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+#info2 ul li{
+	display: inline;
+	margin-left:1.5vh;
+}
+
+#uv{
+	padding:0.2vh 0.5vh;
+}
+
+.uv0 {background-color: rgba(64, 191, 64, 0.6)}
+.uv1 {background-color: rgba(255, 240, 0, 0.6)}
+.uv2 {background-color: rgba(255, 127, 0, 0.5)}
+.uv3 {background-color: rgba(255, 0, 0, 0.6)}
+.uv4 {background-color: rgba(166, 89, 255, 0.75)}
+
+#branding{
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+	background:black;
+	text-align:center;
+	height:100vh;
+	background: url(../img/demo.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 2;
+}
